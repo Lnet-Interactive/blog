@@ -5,6 +5,10 @@
  * @package linaya
  */
 
+
+add_theme_support( 'post-thumbnails' );
+
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */

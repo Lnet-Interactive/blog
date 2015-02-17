@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le : Mar 17 Février 2015 à 17:27
+-- Généré le : Mar 17 Février 2015 à 17:55
 -- Version du serveur: 5.5.41
 -- Version de PHP: 5.3.10-1ubuntu3.15
 
@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `linaya_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=158 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=191 ;
 
 --
 -- Contenu de la table `linaya_options`
@@ -217,7 +217,7 @@ INSERT INTO `linaya_options` (`option_id`, `option_name`, `option_value`, `autol
 (101, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:63:"https://downloads.wordpress.org/release/fr_FR/wordpress-4.1.zip";s:6:"locale";s:5:"fr_FR";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:63:"https://downloads.wordpress.org/release/fr_FR/wordpress-4.1.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:3:"4.1";s:7:"version";s:3:"4.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.1";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1424186836;s:15:"version_checked";s:3:"4.1";s:12:"translations";a:0:{}}', 'yes'),
 (103, '_site_transient_update_plugins', 'O:8:"stdClass":5:{s:12:"last_checked";i:1424186842;s:7:"checked";a:2:{s:19:"akismet/akismet.php";s:5:"3.0.4";s:9:"hello.php";s:3:"1.6";}s:8:"response";a:0:{}s:12:"translations";a:0:{}s:9:"no_update";a:2:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.0.4";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.3.0.4.zip";}s:9:"hello.php";O:8:"stdClass":6:{s:2:"id";s:4:"3564";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";}}}', 'yes'),
 (106, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1424189003;s:7:"checked";a:4:{s:6:"linaya";s:5:"1.0.0";s:13:"twentyfifteen";s:3:"1.0";s:14:"twentyfourteen";s:3:"1.3";s:14:"twentythirteen";s:3:"1.4";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes'),
-(107, '_transient_random_seed', '16a75eadd5c8dfb1056ca9c6eb33f857', 'yes'),
+(107, '_transient_random_seed', '30bfd390243ae36b3202151460ff4141', 'yes'),
 (108, '_site_transient_timeout_browser_7f3aec599605a7bbe622da121287a416', '1424791643', 'yes'),
 (109, '_site_transient_browser_7f3aec599605a7bbe622da121287a416', 'a:9:{s:8:"platform";s:5:"Linux";s:4:"name";s:6:"Chrome";s:7:"version";s:12:"40.0.2214.91";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (111, 'can_compress_scripts', '0', 'yes'),
@@ -251,10 +251,10 @@ INSERT INTO `linaya_options` (`option_id`, `option_name`, `option_value`, `autol
 (137, '_site_transient_browser_900d3a303a783944357dc4c76d55eec2', 'a:9:{s:8:"platform";s:5:"Linux";s:4:"name";s:7:"Firefox";s:7:"version";s:4:"35.0";s:10:"update_url";s:23:"http://www.firefox.com/";s:7:"img_src";s:50:"http://s.wordpress.org/images/browsers/firefox.png";s:11:"img_src_ssl";s:49:"https://wordpress.org/images/browsers/firefox.png";s:15:"current_version";s:2:"16";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (139, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:"auto_add";a:0:{}}', 'yes'),
 (142, 'category_children', 'a:0:{}', 'yes'),
-(154, '_transient_is_multi_author', '0', 'yes'),
-(155, '_transient_linaya_categories', '1', 'yes'),
-(156, '_site_transient_timeout_theme_roots', '1424190578', 'yes'),
-(157, '_site_transient_theme_roots', 'a:4:{s:6:"linaya";s:7:"/themes";s:13:"twentyfifteen";s:7:"/themes";s:14:"twentyfourteen";s:7:"/themes";s:14:"twentythirteen";s:7:"/themes";}', 'yes');
+(158, '_site_transient_timeout_theme_roots', '1424192579', 'yes'),
+(159, '_site_transient_theme_roots', 'a:4:{s:6:"linaya";s:7:"/themes";s:13:"twentyfifteen";s:7:"/themes";s:14:"twentyfourteen";s:7:"/themes";s:14:"twentythirteen";s:7:"/themes";}', 'yes'),
+(188, '_transient_is_multi_author', '0', 'yes'),
+(190, '_transient_linaya_categories', '1', 'yes');
 
 -- --------------------------------------------------------
 
@@ -270,7 +270,7 @@ CREATE TABLE IF NOT EXISTS `linaya_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=87 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=123 ;
 
 --
 -- Contenu de la table `linaya_postmeta`
@@ -283,9 +283,9 @@ INSERT INTO `linaya_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) V
 (4, 5, '_edit_last', '1'),
 (5, 5, '_edit_lock', '1424188589:1'),
 (6, 7, '_edit_last', '1'),
-(7, 7, '_edit_lock', '1424187687:1'),
+(7, 7, '_edit_lock', '1424190649:1'),
 (8, 9, '_edit_last', '1'),
-(9, 9, '_edit_lock', '1424187698:1'),
+(9, 9, '_edit_lock', '1424190662:1'),
 (10, 11, '_menu_item_type', 'custom'),
 (11, 11, '_menu_item_menu_item_parent', '0'),
 (12, 11, '_menu_item_object_id', '11'),
@@ -343,11 +343,30 @@ INSERT INTO `linaya_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) V
 (73, 27, '_edit_last', '1'),
 (75, 27, '_edit_lock', '1424188454:1'),
 (76, 29, '_edit_last', '1'),
-(78, 29, '_edit_lock', '1424188512:1'),
+(78, 29, '_edit_lock', '1424191952:1'),
 (79, 31, '_edit_last', '1'),
-(81, 31, '_edit_lock', '1424188524:1'),
+(81, 31, '_edit_lock', '1424191076:1'),
 (82, 33, '_edit_last', '1'),
-(84, 33, '_edit_lock', '1424188752:1');
+(84, 33, '_edit_lock', '1424191040:1'),
+(88, 37, '_wp_attached_file', '2015/02/1.png'),
+(89, 37, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:97;s:6:"height";i:56;s:4:"file";s:13:"2015/02/1.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}'),
+(90, 38, '_wp_attached_file', '2015/02/2.png'),
+(91, 38, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:93;s:6:"height";i:58;s:4:"file";s:13:"2015/02/2.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}'),
+(92, 39, '_wp_attached_file', '2015/02/3.png'),
+(93, 39, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:89;s:6:"height";i:55;s:4:"file";s:13:"2015/02/3.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}'),
+(95, 33, '_thumbnail_id', '39'),
+(97, 31, '_thumbnail_id', '38'),
+(99, 29, '_thumbnail_id', '37'),
+(101, 40, '_edit_last', '1'),
+(103, 40, '_edit_lock', '1424191451:1'),
+(104, 42, '_edit_last', '1'),
+(106, 42, '_edit_lock', '1424191886:1'),
+(107, 44, '_edit_last', '1'),
+(109, 44, '_edit_lock', '1424191585:1'),
+(110, 46, '_edit_last', '1'),
+(112, 46, '_edit_lock', '1424191737:1'),
+(113, 48, '_edit_last', '1'),
+(115, 48, '_edit_lock', '1424191937:1');
 
 -- --------------------------------------------------------
 
@@ -384,7 +403,7 @@ CREATE TABLE IF NOT EXISTS `linaya_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=37 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=54 ;
 
 --
 -- Contenu de la table `linaya_posts`
@@ -419,14 +438,31 @@ INSERT INTO `linaya_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `
 (26, 1, '2015-02-17 15:56:13', '2015-02-17 15:56:13', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'OutSourcing', '', 'inherit', 'open', 'open', '', '25-revision-v1', '', '', '2015-02-17 15:56:13', '2015-02-17 15:56:13', '', 25, 'http://127.0.0.1/blog/?p=26', 0, 'revision', '', 0),
 (27, 1, '2015-02-17 15:56:35', '2015-02-17 15:56:35', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'Temoignages', '', 'publish', 'open', 'open', '', 'temoignages', '', '', '2015-02-17 15:56:35', '2015-02-17 15:56:35', '', 0, 'http://127.0.0.1/blog/?p=27', 0, 'post', '', 0),
 (28, 1, '2015-02-17 15:56:35', '2015-02-17 15:56:35', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'Temoignages', '', 'inherit', 'open', 'open', '', '27-revision-v1', '', '', '2015-02-17 15:56:35', '2015-02-17 15:56:35', '', 27, 'http://127.0.0.1/blog/?p=28', 0, 'revision', '', 0),
-(29, 1, '2015-02-17 15:57:03', '2015-02-17 15:57:03', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'L''Homme', '', 'publish', 'open', 'open', '', 'lhomme', '', '', '2015-02-17 15:57:03', '2015-02-17 15:57:03', '', 0, 'http://127.0.0.1/blog/?p=29', 0, 'post', '', 0),
+(29, 1, '2015-02-17 15:57:03', '2015-02-17 15:57:03', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'L''Homme', '', 'publish', 'open', 'open', '', 'lhomme', '', '', '2015-02-17 16:54:46', '2015-02-17 16:54:46', '', 0, 'http://127.0.0.1/blog/?p=29', 0, 'post', '', 0),
 (30, 1, '2015-02-17 15:57:03', '2015-02-17 15:57:03', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'L''Homme', '', 'inherit', 'open', 'open', '', '29-revision-v1', '', '', '2015-02-17 15:57:03', '2015-02-17 15:57:03', '', 29, 'http://127.0.0.1/blog/?p=30', 0, 'revision', '', 0),
-(31, 1, '2015-02-17 15:57:45', '2015-02-17 15:57:45', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo', 'La Technologie', '', 'publish', 'open', 'open', '', 'la-technologie', '', '', '2015-02-17 15:57:45', '2015-02-17 15:57:45', '', 0, 'http://127.0.0.1/blog/?p=31', 0, 'post', '', 0),
+(31, 1, '2015-02-17 15:57:45', '2015-02-17 15:57:45', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo', 'La Technologie', '', 'publish', 'open', 'open', '', 'la-technologie', '', '', '2015-02-17 16:40:10', '2015-02-17 16:40:10', '', 0, 'http://127.0.0.1/blog/?p=31', 0, 'post', '', 0),
 (32, 1, '2015-02-17 15:57:45', '2015-02-17 15:57:45', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo', 'La Technologie', '', 'inherit', 'open', 'open', '', '31-revision-v1', '', '', '2015-02-17 15:57:45', '2015-02-17 15:57:45', '', 31, 'http://127.0.0.1/blog/?p=32', 0, 'revision', '', 0),
-(33, 1, '2015-02-17 15:57:55', '2015-02-17 15:57:55', 'Donec sed odio dui. Vestibulum id ligula porta felis euismod sempeDonec sed odio dui. Vestibulum id ligula porta felis euismod sempe.', 'Le métien', 'Donec sed odio dui. Vestibulum id ligula porta felis euismod sempeDonec sed odio dui. Vestibulum id ligula porta felis euismod sempe.', 'publish', 'open', 'open', '', 'le-metien', '', '', '2015-02-17 15:59:12', '2015-02-17 15:59:12', '', 0, 'http://127.0.0.1/blog/?p=33', 0, 'post', '', 0),
+(33, 1, '2015-02-17 15:57:55', '2015-02-17 15:57:55', 'Donec sed odio dui. Vestibulum id ligula porta felis euismod sempeDonec sed odio dui. Vestibulum id ligula porta felis euismod sempe.', 'Le métien', 'Donec sed odio dui. Vestibulum id ligula porta felis euismod sempeDonec sed odio dui. Vestibulum id ligula porta felis euismod sempe.', 'publish', 'open', 'open', '', 'le-metien', '', '', '2015-02-17 16:39:25', '2015-02-17 16:39:25', '', 0, 'http://127.0.0.1/blog/?p=33', 0, 'post', '', 0),
 (34, 1, '2015-02-17 15:57:55', '2015-02-17 15:57:55', 'Donec sed odio dui. Vestibulum id ligula porta felis euismod sempeDonec sed odio dui. Vestibulum id ligula porta felis euismod sempe.', 'Le métien', '', 'inherit', 'open', 'open', '', '33-revision-v1', '', '', '2015-02-17 15:57:55', '2015-02-17 15:57:55', '', 33, 'http://127.0.0.1/blog/?p=34', 0, 'revision', '', 0),
 (35, 1, '2015-02-17 15:58:23', '2015-02-17 15:58:23', 'Donec sed odio dui. Vestibulum id ligula porta felis euismod sempeDonec sed odio dui. Vestibulum id ligula porta felis euismod sempe.', 'Le métien', 'Donec sed odio dui. Vestibulum id ligula porta felis euismod sempeDonec sed odio dui. Vestibulum id ligula porta felis euismod sempe.', 'inherit', 'open', 'open', '', '33-revision-v1', '', '', '2015-02-17 15:58:23', '2015-02-17 15:58:23', '', 33, 'http://127.0.0.1/blog/?p=35', 0, 'revision', '', 0),
-(36, 1, '2015-02-17 15:58:58', '0000-00-00 00:00:00', '', 'Brouillon auto', '', 'auto-draft', 'open', 'open', '', '', '', '', '2015-02-17 15:58:58', '0000-00-00 00:00:00', '', 0, 'http://127.0.0.1/blog/?p=36', 0, 'post', '', 0);
+(36, 1, '2015-02-17 15:58:58', '0000-00-00 00:00:00', '', 'Brouillon auto', '', 'auto-draft', 'open', 'open', '', '', '', '', '2015-02-17 15:58:58', '0000-00-00 00:00:00', '', 0, 'http://127.0.0.1/blog/?p=36', 0, 'post', '', 0),
+(37, 1, '2015-02-17 16:39:00', '2015-02-17 16:39:00', '', '1', '', 'inherit', 'open', 'open', '', '1', '', '', '2015-02-17 16:39:00', '2015-02-17 16:39:00', '', 33, 'http://127.0.0.1/blog/wp-content/uploads/2015/02/1.png', 0, 'attachment', 'image/png', 0),
+(38, 1, '2015-02-17 16:39:00', '2015-02-17 16:39:00', '', '2', '', 'inherit', 'open', 'open', '', '2', '', '', '2015-02-17 16:39:00', '2015-02-17 16:39:00', '', 33, 'http://127.0.0.1/blog/wp-content/uploads/2015/02/2.png', 0, 'attachment', 'image/png', 0),
+(39, 1, '2015-02-17 16:39:00', '2015-02-17 16:39:00', '', '3', '', 'inherit', 'open', 'open', '', '3', '', '', '2015-02-17 16:39:00', '2015-02-17 16:39:00', '', 33, 'http://127.0.0.1/blog/wp-content/uploads/2015/02/3.png', 0, 'attachment', 'image/png', 0),
+(40, 1, '2015-02-17 16:41:35', '2015-02-17 16:41:35', '<p class="color-content">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.</p>\r\n&nbsp;', 'OpenSource', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'publish', 'open', 'open', '', 'opensource-2', '', '', '2015-02-17 16:46:26', '2015-02-17 16:46:26', '', 0, 'http://127.0.0.1/blog/?p=40', 0, 'post', '', 0),
+(41, 1, '2015-02-17 16:41:35', '2015-02-17 16:41:35', '<p class="color-content">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.</p>\r\n&nbsp;', 'OpenSource', '', 'inherit', 'open', 'open', '', '40-revision-v1', '', '', '2015-02-17 16:41:35', '2015-02-17 16:41:35', '', 40, 'http://127.0.0.1/blog/?p=41', 0, 'revision', '', 0),
+(42, 1, '2015-02-17 16:41:46', '2015-02-17 16:41:46', '<p class="color-content">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.</p>\r\n&nbsp;', 'E-Collectivités', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'publish', 'open', 'open', '', 'e-collectivites-2', '', '', '2015-02-17 16:51:30', '2015-02-17 16:51:30', '', 0, 'http://127.0.0.1/blog/?p=42', 0, 'post', '', 0),
+(43, 1, '2015-02-17 16:41:46', '2015-02-17 16:41:46', '<p class="color-content">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.</p>\r\n&nbsp;', 'E-Collectivités', '', 'inherit', 'open', 'open', '', '42-revision-v1', '', '', '2015-02-17 16:41:46', '2015-02-17 16:41:46', '', 42, 'http://127.0.0.1/blog/?p=43', 0, 'revision', '', 0),
+(44, 1, '2015-02-17 16:41:57', '2015-02-17 16:41:57', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'Ecommerce', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'publish', 'open', 'open', '', 'ecommerce-2', '', '', '2015-02-17 16:46:51', '2015-02-17 16:46:51', '', 0, 'http://127.0.0.1/blog/?p=44', 0, 'post', '', 0),
+(45, 1, '2015-02-17 16:41:57', '2015-02-17 16:41:57', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'Ecommerce', '', 'inherit', 'open', 'open', '', '44-revision-v1', '', '', '2015-02-17 16:41:57', '2015-02-17 16:41:57', '', 44, 'http://127.0.0.1/blog/?p=45', 0, 'revision', '', 0),
+(46, 1, '2015-02-17 16:42:09', '2015-02-17 16:42:09', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'E-tourisme', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'publish', 'open', 'open', '', 'e-tourisme-2', '', '', '2015-02-17 16:48:57', '2015-02-17 16:48:57', '', 0, 'http://127.0.0.1/blog/?p=46', 0, 'post', '', 0),
+(47, 1, '2015-02-17 16:42:09', '2015-02-17 16:42:09', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'E-tourisme', '', 'inherit', 'open', 'open', '', '46-revision-v1', '', '', '2015-02-17 16:42:09', '2015-02-17 16:42:09', '', 46, 'http://127.0.0.1/blog/?p=47', 0, 'revision', '', 0),
+(48, 1, '2015-02-17 16:42:34', '2015-02-17 16:42:34', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'OutSourcing', '', 'publish', 'open', 'open', '', 'outsourcing-2', '', '', '2015-02-17 16:54:35', '2015-02-17 16:54:35', '', 0, 'http://127.0.0.1/blog/?p=48', 0, 'post', '', 0),
+(49, 1, '2015-02-17 16:42:34', '2015-02-17 16:42:34', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'OutSourcing', '', 'inherit', 'open', 'open', '', '48-revision-v1', '', '', '2015-02-17 16:42:34', '2015-02-17 16:42:34', '', 48, 'http://127.0.0.1/blog/?p=49', 0, 'revision', '', 0),
+(50, 1, '2015-02-17 16:44:43', '2015-02-17 16:44:43', '<p class="color-content">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.</p>\r\n&nbsp;', 'OpenSource', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'inherit', 'open', 'open', '', '40-revision-v1', '', '', '2015-02-17 16:44:43', '2015-02-17 16:44:43', '', 40, 'http://127.0.0.1/blog/?p=50', 0, 'revision', '', 0),
+(51, 1, '2015-02-17 16:46:51', '2015-02-17 16:46:51', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'Ecommerce', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'inherit', 'open', 'open', '', '44-revision-v1', '', '', '2015-02-17 16:46:51', '2015-02-17 16:46:51', '', 44, 'http://127.0.0.1/blog/?p=51', 0, 'revision', '', 0),
+(52, 1, '2015-02-17 16:48:57', '2015-02-17 16:48:57', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'E-tourisme', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'inherit', 'open', 'open', '', '46-revision-v1', '', '', '2015-02-17 16:48:57', '2015-02-17 16:48:57', '', 46, 'http://127.0.0.1/blog/?p=52', 0, 'revision', '', 0),
+(53, 1, '2015-02-17 16:51:30', '2015-02-17 16:51:30', '<p class="color-content">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.</p>\r\n&nbsp;', 'E-Collectivités', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui.', 'inherit', 'open', 'open', '', '42-revision-v1', '', '', '2015-02-17 16:51:30', '2015-02-17 16:51:30', '', 42, 'http://127.0.0.1/blog/?p=53', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
@@ -486,7 +522,11 @@ INSERT INTO `linaya_term_relationships` (`object_id`, `term_taxonomy_id`, `term_
 (29, 1, 0),
 (31, 1, 0),
 (33, 1, 0),
-(33, 3, 0);
+(40, 1, 0),
+(42, 1, 0),
+(44, 1, 0),
+(46, 1, 0),
+(48, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -511,9 +551,9 @@ CREATE TABLE IF NOT EXISTS `linaya_term_taxonomy` (
 --
 
 INSERT INTO `linaya_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
-(1, 1, 'category', '', 0, 9),
+(1, 1, 'category', '', 0, 14),
 (2, 2, 'nav_menu', '', 0, 4),
-(3, 3, 'post_format', '', 0, 1);
+(3, 3, 'post_format', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -548,15 +588,15 @@ INSERT INTO `linaya_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) 
 (10, 1, 'linaya_capabilities', 'a:1:{s:13:"administrator";b:1;}'),
 (11, 1, 'linaya_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', 'wp360_locks,wp390_widgets,wp410_dfw'),
-(13, 1, 'show_welcome_panel', '1'),
-(14, 1, 'session_tokens', 'a:2:{s:64:"e7ac45855d0a636b67b6d02e7c59274009bb203d1b0a6a7161f8e359fda4078e";a:4:{s:10:"expiration";i:1424359641;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36";s:5:"login";i:1424186841;}s:64:"65d48ba505ccbef2e097241e37bd37e9a54e05bd6db58524bceed204a6b8602f";a:4:{s:10:"expiration";i:1424360599;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0";s:5:"login";i:1424187799;}}'),
+(13, 1, 'show_welcome_panel', '0'),
+(14, 1, 'session_tokens', 'a:3:{s:64:"e7ac45855d0a636b67b6d02e7c59274009bb203d1b0a6a7161f8e359fda4078e";a:4:{s:10:"expiration";i:1424359641;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36";s:5:"login";i:1424186841;}s:64:"65d48ba505ccbef2e097241e37bd37e9a54e05bd6db58524bceed204a6b8602f";a:4:{s:10:"expiration";i:1424360599;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0";s:5:"login";i:1424187799;}s:64:"b0dca19b60b288a8a8f2f7db3070a36fce26a46553da5ee3c15e5d878ba09929";a:4:{s:10:"expiration";i:1424363579;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36";s:5:"login";i:1424190779;}}'),
 (15, 1, 'linaya_dashboard_quick_press_last_post_id', '3'),
 (16, 1, 'managenav-menuscolumnshidden', 'a:4:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";}'),
 (17, 1, 'metaboxhidden_nav-menus', 'a:3:{i:0;s:8:"add-post";i:1;s:12:"add-post_tag";i:2;s:15:"add-post_format";}'),
 (18, 1, 'closedpostboxes_post', 'a:0:{}'),
 (19, 1, 'metaboxhidden_post', 'a:6:{i:0;s:13:"trackbacksdiv";i:1;s:10:"postcustom";i:2;s:16:"commentstatusdiv";i:3;s:11:"commentsdiv";i:4;s:7:"slugdiv";i:5;s:9:"authordiv";}'),
-(20, 1, 'linaya_user-settings', 'cats=pop'),
-(21, 1, 'linaya_user-settings-time', '1424188699'),
+(20, 1, 'linaya_user-settings', 'cats=pop&editor=tinymce&libraryContent=browse'),
+(21, 1, 'linaya_user-settings-time', '1424191161'),
 (22, 1, 'closedpostboxes_page', 'a:0:{}'),
 (23, 1, 'metaboxhidden_page', 'a:4:{i:0;s:16:"commentstatusdiv";i:1;s:11:"commentsdiv";i:2;s:7:"slugdiv";i:3;s:9:"authordiv";}');
 
