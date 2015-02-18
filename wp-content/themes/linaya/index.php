@@ -14,36 +14,6 @@
 get_header(); ?>
 
 <section class="content" id="content" >
-
-<?php /*
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<?php /* Start the Loop  ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					 Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-
-					get_template_part( 'content', get_post_format() );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary --> */?>
 		<div class="container">
 
 			<div class="taille-slider">
@@ -180,13 +150,50 @@ get_header(); ?>
 				</div>
 
 				<div class=" col-lg-3 col-lg-offset-1 ">
-					<h4 class="color-titre-menu">Temoignages<img src="<?php echo bloginfo('template_directory') ?>/image/flecheHaut.PNG"><img src="<?php echo bloginfo('template_directory') ?>/image/flecheBas.PNG">
+					<h4 class="color-titre-menu">Temoignages
 					</h4>
 
-					<p class="color-content">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui. </p>
+					<div class="testimonials-slider">
 
-					<a href="#" class="style-titre"> Voir Tous Les Témoignages <img src="<?php echo bloginfo('template_directory') ?>/image/flèche.PNG"></a>
+
+						<?php
+							$args=array(
+								'category_name'  => 'temoignages',
+								'post_type'      => 'post',
+								'post_status'    => 'publish',
+							);
+
+							$_allPosts = get_posts( $args );
+							foreach ( $_allPosts as $post ) : setup_postdata( $post );
+								$metaName = get_post_meta( $post->ID, 'testimonials-name' );
+								$metaLink = get_post_meta( $post->ID, 'testimonials-link' );
+
+						?>
+								<div class="slide">
+									<div class="testimonials-carousel-context">
+										<div class="testimonials-carousel-content"><p class="color-content" ><?php echo $post->post_content; ?></p></div>
+										<div class="testimonials-name"><?php echo $metaName[0]; ?><span><?php echo $metaLink[0]; ?></span></div>
+									</div>
+								</div>
+
+						<?php
+							endforeach;
+							wp_reset_postdata();
+						?>
+
+					</div>
+					<?php
+						// Get the ID of a given category
+							$category_id = get_cat_ID( 'Témoignages' );
+						// Get the URL of this category
+							$category_link = get_category_link( $category_id );
+					?>
+
+					<a href="<?php echo esc_url( $category_link ); ?>" class="style-titre"> Voir Tous Les Témoignages <img src="<?php echo bloginfo('template_directory') ?>/image/fleche.PNG"></a>
+
 				</div>
+
+
 
 			</div>
 		</div>

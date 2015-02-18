@@ -18,14 +18,33 @@
 
 	<!-- Bootstrap Core CSS -->
 	<link href="<?php echo bloginfo('template_directory') ?>/css/bootstrap.min.css" rel="stylesheet">
+
 	<!-- jQuery Version 1.11.1 -->
-	<script src="<?php echo bloginfo('template_directory') ?>/js/jquery.js"></script>
+	<script src="<?php echo bloginfo('template_directory') ?>/js/jquery.bxslider.min.js"></script>
+
+	<!-- DEMO JS -->
+	<script  type="text/javascript" >
+		var j = jQuery.noConflict();
+		j(document).ready(function($){
+			$(".testimonials-slider").bxSlider({
+				slideWidth: 800,
+				minSlides: 2,
+				maxSlides: 2,
+				slideMargin: 32,
+				auto: true,
+				autoControls: true
+			});
+		});
+
+	</script>
+
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="<?php echo bloginfo('template_directory') ?>/js/bootstrap.min.js"></script>
 
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>
