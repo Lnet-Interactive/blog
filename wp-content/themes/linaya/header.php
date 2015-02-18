@@ -109,7 +109,7 @@
 							wp_nav_menu( $defaults );
 
 						?>
-						<div class="form-group">
+						<div class="form-group1">
 							<a href="#"><img src="<?php echo bloginfo('template_directory') ?>/image/fb.PNG" class="margin-img"></a>
 							<a href="#"><img src="<?php echo bloginfo('template_directory') ?>/image/tw.PNG" class="margin-img"></a>
 							<a href="#"><img src="<?php echo bloginfo('template_directory') ?>/image/fb.PNG"></a>
