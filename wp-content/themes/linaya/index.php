@@ -58,8 +58,11 @@ get_header(); ?>
 					<div class="container">
 
 						<?php
-							$post_1 = get_post(29);
-							$title1 = $post_1->post_title;
+							$post_1 = get_category_by_slug('lhomme');
+							$title1 = $post_1->cat_name;
+							$category_description1 = $post_1->category_description;
+							$cat_ID1 = $post_1->cat_ID;
+
 						?>
 
 						<div class="col-lg-4">
@@ -68,37 +71,44 @@ get_header(); ?>
 							<h4>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</h4>
 
 							<div class="spacer"></div>
-							<p><?php echo $post_1->post_excerpt; ?></p>
+							<p><?php echo $category_description1; ?></p>
 
-							<p><a class="btn btn-default color-button" href="<?php echo the_permalink() ; ?>" role="button">En savoir + &raquo;</a></p>
+							<p><a class="btn btn-default color-button" href="<?php echo get_category_link( $cat_ID1 ) ; ?>" role="button">En savoir + &raquo;</a></p>
 						</div>
 						<?php
-							$post_2 = get_post(31);
-							$title2 = $post_2->post_title;
+						$post_2 = get_category_by_slug('la-technologie');
+						$title2 = $post_2->cat_name;
+						$category_description2 = $post_2->category_description;
+						$cat_ID2 = $post_2->cat_ID;
+
 						?>
-						<div class=" col-lg-4">
+
+						<div class="col-lg-4">
 							<h2><?php echo $title2; ?></h2>
 							<img src="<?php echo bloginfo('template_directory') ?>/image/2.PNG" class="taille-blog">
 							<h4>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</h4>
 
 							<div class="spacer"></div>
-							<p><?php echo $post_2->post_excerpt; ?></p>
+							<p><?php echo $category_description2; ?></p>
 
-							<p><a class="btn btn-default color-button" href="<?php echo the_permalink() ; ?>" role="button">En savoir +&raquo;</a></p>
+							<p><a class="btn btn-default color-button" href="<?php echo get_category_link( $cat_ID2 ) ; ?>" role="button">En savoir + &raquo;</a></p>
 						</div>
 						<?php
-							$post_3 = get_post(33);
-							$title3 = $post_3->post_title;
+						$post_3 = get_category_by_slug('le-metien');
+						$title3 = $post_3->cat_name;
+						$category_description3 = $post_3->category_description;
+						$cat_ID3 = $post_3->cat_ID;
 						?>
+
 						<div class="col-lg-4">
-							<h2><?php echo $title3 ; ?></h2>
+							<h2><?php echo $title3; ?></h2>
 							<img src="<?php echo bloginfo('template_directory') ?>/image/3.PNG" class="taille-blog">
 							<h4>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</h4>
 
 							<div class="spacer"></div>
-							<p><?php echo $post_3->post_excerpt;; ?></p>
+							<p><?php echo $category_description2; ?></p>
 
-							<p><a class="btn btn-default color-button" href="<?php echo the_permalink() ; ?>" role="button">En savoir + &raquo;</a></p>
+							<p><a class="btn btn-default color-button" href="<?php echo get_category_link( $cat_ID3 ) ; ?>" role="button">En savoir + &raquo;</a></p>
 						</div>
 					</div>
 				</div>

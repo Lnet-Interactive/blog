@@ -12,10 +12,6 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -42,9 +38,6 @@ get_header(); ?>
 
 				<?php comments_template(); ?>
 			<?php endwhile; ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

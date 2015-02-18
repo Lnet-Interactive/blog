@@ -71,7 +71,7 @@
 		</div>
 		<!-- Navigation -->
 		<div class="menu">
-			<nav class="navbar navbar-inverse color-nav " role="navigation">
+			<nav class="navbar navbar-inverse color-nav linaya_menu" role="navigation">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
@@ -109,22 +109,23 @@
 							wp_nav_menu( $defaults );
 
 						?>
-						<div class="form-group1">
-							<a href="#"><img src="<?php echo bloginfo('template_directory') ?>/image/fb.PNG" class="margin-img"></a>
-							<a href="#"><img src="<?php echo bloginfo('template_directory') ?>/image/tw.PNG" class="margin-img"></a>
-							<a href="#"><img src="<?php echo bloginfo('template_directory') ?>/image/fb.PNG"></a>
-							<a href="#"><img src="<?php echo bloginfo('template_directory') ?>/image/in.PNG"></a>
-
-							<form role="search" class="navbar-form  glyphicon searchform" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-								<div>
-									<label class="screen-reader-text" for="s"><?php _x( 'Search for:', 'label' ); ?></label>
-									<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="Recherche" class="form-control recherche taille-search"/>
-									<input type="submit" id="searchsubmit" value="" />
-								</div>
-							</form>
-
-
-
+						<div class="form-group1 col-lg-6">
+							<div class="social social col-lg-3">
+								<a href="#"><img src="<?php echo bloginfo('template_directory') ?>/image/fb.PNG" class="margin-img"></a>
+								<a href="#"><img src="<?php echo bloginfo('template_directory') ?>/image/tw.PNG" class="margin-img"></a>
+								<a href="#"><img src="<?php echo bloginfo('template_directory') ?>/image/fb.PNG"></a>
+								<a href="#"><img src="<?php echo bloginfo('template_directory') ?>/image/in.PNG"></a>
+							</div>
+							<div class="search_linaya  col-lg-6">
+								<!--navbar-form-->
+								<form role="search" class="  glyphicon searchform" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+									<div>
+										<label class="screen-reader-text" for="s"><?php _x( 'Search for:', 'label' ); ?></label>
+										<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="Recherche" class="form-control recherche taille-search"/>
+										<input type="submit" id="searchsubmit" value="" />
+									</div>
+								</form>
+							</div>
 						</div>
 
 					</div>

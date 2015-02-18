@@ -18,7 +18,7 @@
 	<div class="entry-content">
 		<?php
 			/* translators: %s: Name of current post */
-			the_content( sprintf(
+			the_excerpt( sprintf(
 				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'linaya' ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
@@ -37,4 +37,4 @@
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>

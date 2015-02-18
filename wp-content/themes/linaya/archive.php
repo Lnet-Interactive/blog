@@ -16,7 +16,11 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+
+				$title = single_cat_title("", false);
+				//sprintf('<h1 class="page-title">%c </h1>', );
+				echo sprintf( '<h1 class="page-title">%s</h1>', $title ) ;
+
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -31,7 +35,7 @@ get_header(); ?>
 					 */
 					get_template_part( 'content', get_post_format() );
 				?>
-
+				<div class="spacer_article"></div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
