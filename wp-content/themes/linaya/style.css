@@ -985,8 +985,10 @@ footer {
 }
 
 .form-group1 {
-	margin-top: 2px;
-	padding-left: 5px;
+
+    margin-top: 2px;
+    margin-right: 150px;
+    padding-left: 0px;
 
 }
 
@@ -999,6 +1001,9 @@ footer {
 	background-repeat: no-repeat !important;
 	padding-left:40px !important;
 	border: 1px solid !important;
+    background-position: right;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    padding: 6px 15px 6px 15px;
 }
 
 
@@ -1035,3 +1040,9 @@ article a{
 	position: relative;
 	top: 12px;
 }
+
+
+#search input[type="text"]:focus {
+    width: 50px;
+}
+
