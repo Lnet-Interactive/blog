@@ -7,7 +7,8 @@
 
 
 add_theme_support( 'post-thumbnails' );
-
+add_post_type_support( 'page', 'excerpt');
+add_post_type_support( 'post', 'excerpt');
 
 /**
  * Set the content width based on the theme's design and stylesheet.

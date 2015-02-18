@@ -43,7 +43,10 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary --> */?>
 	<div class="container">
-		<img src="<?php echo bloginfo('template_directory') ?>/image/Sli1.PNG" class="taille-slider">
+
+		<div class="taille-slider">
+			<?php putRevSlider("homeslider_boxed") ?>
+		</div>
 
 		<div class="blog">
 
@@ -63,7 +66,7 @@ get_header(); ?>
 						<h4>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</h4>
 
 						<div class="spacer"></div>
-						<p><?php echo the_excerpt(); ?></p>
+						<p><?php echo $post_1->post_excerpt; ?></p>
 
 						<p><a class="btn btn-default color-button" href="<?php echo the_permalink() ; ?>" role="button">En savoir + &raquo;</a></p>
 					</div>
@@ -77,7 +80,7 @@ get_header(); ?>
 						<h4>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</h4>
 
 						<div class="spacer"></div>
-						<p><?php echo the_excerpt(); ?></p>
+						<p><?php echo $post_2->post_excerpt; ?></p>
 
 						<p><a class="btn btn-default color-button" href="<?php echo the_permalink() ; ?>" role="button">En savoir +&raquo;</a></p>
 					</div>
@@ -91,7 +94,7 @@ get_header(); ?>
 						<h4>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</h4>
 
 						<div class="spacer"></div>
-						<p><?php echo the_excerpt(); ?></p>
+						<p><?php echo $post_3->post_excerpt;; ?></p>
 
 						<p><a class="btn btn-default color-button" href="<?php echo the_permalink() ; ?>" role="button">En savoir + &raquo;</a></p>
 					</div>
@@ -107,35 +110,32 @@ get_header(); ?>
 				<?php
 					$bloc_1 = get_post(40);
 					$title_bloc1 = $bloc_1->post_title;
-					$the_excerpt_1 = $bloc_1->the_excerpt;
 				?>
 				<h4 class="color-titre-menu">Solutions</h4>
 				<h5 class="style-titre">
 					<img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc1; ?></h5>
 
 
-				<p class="color-content"><?php echo $bloc_1->post_content; ?></p>
+				<p class="color-content"><?php echo $bloc_1->post_excerpt; ?></p>
 				<?php
 					$bloc_2 = get_post(44);
 					$title_bloc2 = $bloc_2->post_title;
-					$the_excerpt_2 = $bloc_2->the_excerpt;
 				?>
 
 				<h5 class="style-titre"><img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc2; ?></h5>
 
-				<p class="color-content"><?php echo $bloc_2->post_content; ?></p>
+				<p class="color-content"><?php echo $bloc_2->post_excerpt; ?></p>
 
 
 				<?php
 				$bloc_3 = get_post(46);
 				$title_bloc3 = $bloc_3->post_title;
-				$the_excerpt_3 = $bloc_3->the_excerpt;
 				?>
 
 				<h5 class="style-titre"><img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc3; ?></h5>
 
 
-				<p class="color-content"><?php echo $bloc_3->post_content; ?></p>
+				<p class="color-content"><?php echo $bloc_3->post_excerpt; ?></p>
 
 			</div>
 
@@ -146,25 +146,24 @@ get_header(); ?>
 				<?php
 					$bloc_4 = get_post(46);
 					$title_bloc4 = $bloc_4->post_title;
-					$the_excerpt_4 = $bloc_4->the_excerpt;
 				?>
 
 				<h5 class="style-titre"><img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc4; ?></h5>
 
 
-				<p class="color-content"><?php echo $bloc_4->post_content; ?></p>
+				<p class="color-content"><?php echo $bloc_4->post_excerpt; ?></p>
 
 
 
 				<?php
-					$bloc_5 = get_post(46);
+					$bloc_5 = get_post(25);
 					$title_bloc5 = $bloc_5->post_title;
-					$the_excerpt_5 = $bloc_5->the_excerpt;
+					$the_excerpt_5 = $bloc_5->post_excerpt;
 				?>
 
 				<h5 class="style-titre"><img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc5; ?></h5>
 
-				<p class="color-content"><?php echo $bloc_5->post_content; ?></p>
+				<p class="color-content"><?php echo $the_excerpt_5;  ?></p>
 
 			</div>
 

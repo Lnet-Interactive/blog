@@ -933,8 +933,10 @@ img.margin-img{
 	margin-left: 5px;
 }
 
-img.taille-slider{
-	width: 1140px;
+.taille-slider{
+	width: 100%;
+	margin-top: 48px;
+	color: #000;
 }
 
 
