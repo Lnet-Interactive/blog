@@ -36,3 +36,5 @@
 		<?php linaya_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+
+<?php get_sidebar(); ?>

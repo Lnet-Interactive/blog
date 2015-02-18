@@ -13,6 +13,8 @@
 
 get_header(); ?>
 
+<section class="content" id="content" >
+
 <?php /*
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -42,142 +44,140 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary --> */?>
-	<div class="container">
+		<div class="container">
 
-		<div class="taille-slider">
-			<?php putRevSlider("homeslider_boxed") ?>
-		</div>
+			<div class="taille-slider">
+				<?php putRevSlider("homeslider_boxed") ?>
+			</div>
 
-		<div class="blog">
+			<div class="blog">
 
 
-			<!-- Example row of columns -->
-			<div class="row">
-				<div class="container">
+				<!-- Example row of columns -->
+				<div class="row">
+					<div class="container">
 
-					<?php
-						$post_1 = get_post(29);
-						$title1 = $post_1->post_title;
-					?>
+						<?php
+							$post_1 = get_post(29);
+							$title1 = $post_1->post_title;
+						?>
 
-					<div class="col-lg-4">
-						<h2><?php echo $title1; ?></h2>
-						<img src="<?php echo bloginfo('template_directory') ?>/image/1.PNG" class="taille-blog">
-						<h4>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</h4>
+						<div class="col-lg-4">
+							<h2><?php echo $title1; ?></h2>
+							<img src="<?php echo bloginfo('template_directory') ?>/image/1.PNG" class="taille-blog">
+							<h4>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</h4>
 
-						<div class="spacer"></div>
-						<p><?php echo $post_1->post_excerpt; ?></p>
+							<div class="spacer"></div>
+							<p><?php echo $post_1->post_excerpt; ?></p>
 
-						<p><a class="btn btn-default color-button" href="<?php echo the_permalink() ; ?>" role="button">En savoir + &raquo;</a></p>
-					</div>
-					<?php
-						$post_2 = get_post(31);
-						$title2 = $post_2->post_title;
-					?>
-					<div class=" col-lg-4">
-						<h2><?php echo $title2; ?></h2>
-						<img src="<?php echo bloginfo('template_directory') ?>/image/2.PNG" class="taille-blog">
-						<h4>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</h4>
+							<p><a class="btn btn-default color-button" href="<?php echo the_permalink() ; ?>" role="button">En savoir + &raquo;</a></p>
+						</div>
+						<?php
+							$post_2 = get_post(31);
+							$title2 = $post_2->post_title;
+						?>
+						<div class=" col-lg-4">
+							<h2><?php echo $title2; ?></h2>
+							<img src="<?php echo bloginfo('template_directory') ?>/image/2.PNG" class="taille-blog">
+							<h4>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</h4>
 
-						<div class="spacer"></div>
-						<p><?php echo $post_2->post_excerpt; ?></p>
+							<div class="spacer"></div>
+							<p><?php echo $post_2->post_excerpt; ?></p>
 
-						<p><a class="btn btn-default color-button" href="<?php echo the_permalink() ; ?>" role="button">En savoir +&raquo;</a></p>
-					</div>
-					<?php
-						$post_3 = get_post(33);
-						$title3 = $post_3->post_title;
-					?>
-					<div class="col-lg-4">
-						<h2><?php echo $title3 ; ?></h2>
-						<img src="<?php echo bloginfo('template_directory') ?>/image/3.PNG" class="taille-blog">
-						<h4>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</h4>
+							<p><a class="btn btn-default color-button" href="<?php echo the_permalink() ; ?>" role="button">En savoir +&raquo;</a></p>
+						</div>
+						<?php
+							$post_3 = get_post(33);
+							$title3 = $post_3->post_title;
+						?>
+						<div class="col-lg-4">
+							<h2><?php echo $title3 ; ?></h2>
+							<img src="<?php echo bloginfo('template_directory') ?>/image/3.PNG" class="taille-blog">
+							<h4>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</h4>
 
-						<div class="spacer"></div>
-						<p><?php echo $post_3->post_excerpt;; ?></p>
+							<div class="spacer"></div>
+							<p><?php echo $post_3->post_excerpt;; ?></p>
 
-						<p><a class="btn btn-default color-button" href="<?php echo the_permalink() ; ?>" role="button">En savoir + &raquo;</a></p>
+							<p><a class="btn btn-default color-button" href="<?php echo the_permalink() ; ?>" role="button">En savoir + &raquo;</a></p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="spacer"></div>
-	<div class="row">
-		<div class="container">
-			<div class=" col-lg-3 ">
-				<?php
-					$bloc_1 = get_post(40);
-					$title_bloc1 = $bloc_1->post_title;
-				?>
-				<h4 class="color-titre-menu">Solutions</h4>
-				<h5 class="style-titre">
-					<img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc1; ?></h5>
-
-
-				<p class="color-content"><?php echo $bloc_1->post_excerpt; ?></p>
-				<?php
-					$bloc_2 = get_post(44);
-					$title_bloc2 = $bloc_2->post_title;
-				?>
-
-				<h5 class="style-titre"><img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc2; ?></h5>
-
-				<p class="color-content"><?php echo $bloc_2->post_excerpt; ?></p>
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="container">
+				<div class=" col-lg-3 ">
+					<?php
+						$bloc_1 = get_post(40);
+						$title_bloc1 = $bloc_1->post_title;
+					?>
+					<h4 class="color-titre-menu">Solutions</h4>
+					<h5 class="style-titre">
+						<img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc1; ?></h5>
 
 
-				<?php
-				$bloc_3 = get_post(46);
-				$title_bloc3 = $bloc_3->post_title;
-				?>
+					<p class="color-content"><?php echo $bloc_1->post_excerpt; ?></p>
+					<?php
+						$bloc_2 = get_post(44);
+						$title_bloc2 = $bloc_2->post_title;
+					?>
 
-				<h5 class="style-titre"><img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc3; ?></h5>
+					<h5 class="style-titre"><img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc2; ?></h5>
+
+					<p class="color-content"><?php echo $bloc_2->post_excerpt; ?></p>
 
 
-				<p class="color-content"><?php echo $bloc_3->post_excerpt; ?></p>
+					<?php
+					$bloc_3 = get_post(46);
+					$title_bloc3 = $bloc_3->post_title;
+					?>
+
+					<h5 class="style-titre"><img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc3; ?></h5>
+
+
+					<p class="color-content"><?php echo $bloc_3->post_excerpt; ?></p>
+
+				</div>
+
+				<div class=" col-lg-3 col-lg-offset-1 ">
+					<div class="spacer"></div>
+					<div class="spacer"></div>
+
+					<?php
+						$bloc_4 = get_post(46);
+						$title_bloc4 = $bloc_4->post_title;
+					?>
+
+					<h5 class="style-titre"><img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc4; ?></h5>
+
+
+					<p class="color-content"><?php echo $bloc_4->post_excerpt; ?></p>
+
+
+
+					<?php
+						$bloc_5 = get_post(25);
+						$title_bloc5 = $bloc_5->post_title;
+						$the_excerpt_5 = $bloc_5->post_excerpt;
+					?>
+
+					<h5 class="style-titre"><img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc5; ?></h5>
+
+					<p class="color-content"><?php echo $the_excerpt_5;  ?></p>
+
+				</div>
+
+				<div class=" col-lg-3 col-lg-offset-1 ">
+					<h4 class="color-titre-menu">Temoignages<img src="<?php echo bloginfo('template_directory') ?>/image/flecheHaut.PNG"><img src="<?php echo bloginfo('template_directory') ?>/image/flecheBas.PNG">
+					</h4>
+
+					<p class="color-content">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui. </p>
+
+					<a href="#" class="style-titre"> Voir Tous Les Témoignages <img src="<?php echo bloginfo('template_directory') ?>/image/flèche.PNG"></a>
+				</div>
 
 			</div>
-
-			<div class=" col-lg-3 col-lg-offset-1 ">
-				<div class="spacer"></div>
-				<div class="spacer"></div>
-
-				<?php
-					$bloc_4 = get_post(46);
-					$title_bloc4 = $bloc_4->post_title;
-				?>
-
-				<h5 class="style-titre"><img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc4; ?></h5>
-
-
-				<p class="color-content"><?php echo $bloc_4->post_excerpt; ?></p>
-
-
-
-				<?php
-					$bloc_5 = get_post(25);
-					$title_bloc5 = $bloc_5->post_title;
-					$the_excerpt_5 = $bloc_5->post_excerpt;
-				?>
-
-				<h5 class="style-titre"><img src="<?php echo bloginfo('template_directory') ?>/image/icone.PNG"/><?php echo $title_bloc5; ?></h5>
-
-				<p class="color-content"><?php echo $the_excerpt_5;  ?></p>
-
-			</div>
-
-			<div class=" col-lg-3 col-lg-offset-1 ">
-				<h4 class="color-titre-menu">Temoignages<img src="<?php echo bloginfo('template_directory') ?>/image/flecheHaut.PNG"><img src="<?php echo bloginfo('template_directory') ?>/image/flecheBas.PNG">
-				</h4>
-
-				<p class="color-content">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh Donec sed odio dui. </p>
-
-				<a href="#" class="style-titre"> Voir Tous Les Témoignages <img src="<?php echo bloginfo('template_directory') ?>/image/flèche.PNG"></a>
-			</div>
-
 		</div>
-	</div>
-
-<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

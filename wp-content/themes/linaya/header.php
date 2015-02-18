@@ -136,4 +136,5 @@
 		</div>
 	</header>
 
-	<section class="content" id="content" >
+	<div id="main-content" class="main-content">
+		<section class="content" id="content" >
