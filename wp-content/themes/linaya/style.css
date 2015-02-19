@@ -1110,6 +1110,36 @@ article a{
 	width: 100%;
 }
 
+.footer
+{
+	padding: 14px;
+}
+
+.menu_footer
+{
+	margin-left: -96px;
+	width: 100%;
+}
+.menu_footer li
+{
+	display: block !important;
+	padding: 10px;
+	margin-left: -28px;
+
+}
+.menu_footer li a
+{
+	color: #ffffff;
+}
+iframe#twitter-widget-0
+{
+	width : 324px !important;
+}
+
+.copyright a
+{
+	color: white;
+}
 @media (min-width:1200px){.menu div.container{margin-left: 269px !important;}}
 
 .bx-wrapper .testimonials-thumbnail{ margin: 0px 0px 15px; }
